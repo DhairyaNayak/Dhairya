@@ -1,0 +1,127 @@
+.tacbox {
+    display:block;
+    padding: 1em;
+    margin: 2em;
+    border: 3px solid #ddd;
+    background-color: #eee;
+    max-width: 800px;
+  }
+  
+  input {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+  }
+  /*
+  label {
+    outline: 2px dotted #f00;
+  }
+  
+  /*
+  label:after {
+    content: attr(for);
+  }*/
+  #Terms-Condition {
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: -19px;
+    padding: 30px;
+    background-color: aquamarine;
+}
+#Terms h1{ 
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+#Terms-Condition h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+body, .button, .tick {
+    display: flow-root;
+    justify-content: end;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 270px;
+    height: 80px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.check-box{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+
+.check-box svg{
+    width: 40px;
+    margin: 20px;
+}
+
+svg path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active{
+    background: #ff2b75;
+    transition: 1s;
+}
+
+.active .check-box{
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p{
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+  
+  
